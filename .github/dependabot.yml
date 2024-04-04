@@ -3,7 +3,7 @@
 
 version: 2
 updates:
-# Enable version updates for npm
+  # Enable version updates for npm
   - package-ecosystem: "npm"
     # Look for `package.json` and `lock` files in the `root` directory
     directory: "/"
@@ -11,5 +11,5 @@ updates:
     schedule:
       interval: "weekly"
     commit-message:
-      # Prefix all commit messages with "npm: "
-      prefix: "npm"
+      # Prefix all commit messages with "build(deps): "
+      prefix: "build(deps)"
